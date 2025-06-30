@@ -1,0 +1,146 @@
+/* === Основные настройки === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5ebe0; /* Светло-бежевый фон */
+    color: #332d2b; /* Темно-коричневый текст */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* === Шапка сайта === */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8b7a9; /* Коричнево-бежевый фон */
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #ffffff; /* Белый текст */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* === Навигационное меню === */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff; /* Белый текст */
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #a58d7e; /* Темный коричневый фон при hover */
+    transform: translateX(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.active {
+    background-color: #8d7968; /* Очень темный коричневый фон для активной ссылки */
+    font-weight: bold;
+}
+
+/* === Основной контент === */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2, h3 {
+    color: #332d2b; /* Темно-коричневый заголовок */
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* === Фотогалерея на странице практики === */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #332d2b; /* Темно-коричневая рамка */
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* === Диаграммы курсовой работы === */
+.diagram {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.diagram img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #332d2b; /* Темно-коричневая рамка */
+    border-radius: 8px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diagram p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #332d2b; /* Темно-коричневый текст */
+}
+
+/* === Сертификаты достижений === */
+.certificate {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #332d2b; /* Темно-коричневая рамка */
+    border-radius: 8px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
